@@ -1,18 +1,18 @@
 _OakAppearsText::
-	text "OAK: Hey! Wait!"
+	text "Danny: Hey! STOP!"
 	line "Don't go out!@@"
 
 _OakWalksUpText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "Danny: I told!"
+	line "you to be"
+	cont "careful!"
 
-	para "You need your own"
-	line "#MON for your"
+	para "If you go out on"
+	line "your own you need"
 	cont "protection."
 	cont "I know!"
 
-	para "Here, come with"
+	para "Come with"
 	line "me!"
 	done
 
@@ -26,13 +26,13 @@ _PalletTownText2::
 	done
 
 _PalletTownText3::
-	text "Technology is"
-	line "incredible!"
+	text "I might be fat"
+	line "but I am strong!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "People need to"
+	line "respect me more"
+	cont "I am a pokemon"
+	cont "expert after all"
 	done
 
 _PalletTownText4::
@@ -41,9 +41,9 @@ _PalletTownText4::
 	done
 
 _PalletTownText5::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "SHADY TOWN"
+	line "Criminals lurking"
+	cont "in every corner"
 	done
 
 _PalletTownText6::

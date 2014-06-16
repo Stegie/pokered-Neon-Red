@@ -1,19 +1,21 @@
 _UnnamedText_5c49e:: ; 9697a (25:697a)
-	text "I'm BROCK!"
-	line "I'm PEWTER's GYM"
+	text "I'm DAVID!"
+	line "AN ICE TYPE"
 	cont "LEADER!"
 
-	para "I believe in rock"
-	line "hard defense and"
-	cont "determination!"
+	para "FREEZING FOES"
+	line "can have"
+	cont "devastating"
+	cont "effects"
 
 	para "That's why my"
 	line "#MON are all"
-	cont "the rock-type!"
+	cont "the ice-type!"
 
-	para "Do you still want"
-	line "to challenge me?"
-	cont "Fine then! Show"
-	cont "me your best!"
+	para "Do you still have"
+	line "the guts to take"
+	cont "me on?"
+	cont "Fine then! Let's"
+	cont "do this!"
 	done
 

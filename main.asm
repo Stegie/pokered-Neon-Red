@@ -10745,13 +10745,13 @@ MewBaseStats: ; 425b (1:425b)
 
 	db 45 ; catch rate
 	db 64 ; base exp yield
-	db $55 ; sprite dimensions
+	db $66 ; sprite dimensions
 
 	dw MewPicFront
 	dw MewPicBack
 
 	; attacks known at lvl 0
-	db POUND
+	db FISSURE
 	db 0
 	db 0
 	db 0
@@ -10903,7 +10903,7 @@ ENDC
 	jr nz, .asm_4361
 	call Func_44dd
 	ld hl, $c328
-	ld a, $74
+	ld a, $70
 	ld [hl], a
 	FuncCoord 2, 17 ; $c4f6
 	ld hl, Coord
@@ -10925,7 +10925,7 @@ ENDC
 	call LoadScreenTilesFromBuffer2
 	call EnableLCD
 IF _RED
-	ld a,CHARMANDER ; which Pokemon to show first on the title screen
+	ld a,MACHOP ; which Pokemon to show first on the title screen
 ENDC
 IF _BLUE
 	ld a,SQUIRTLE ; which Pokemon to show first on the title screen
@@ -11194,21 +11194,21 @@ TitleMons: ; 4588 (1:4588)
 ; mons on the title screen are randomly chosen from here
 IF _RED
 	db CHARMANDER
-	db SQUIRTLE
-	db BULBASAUR
-	db WEEDLE
-	db NIDORAN_M
+	db HITMONLEE
+	db CATERPIE
+	db DRAGONITE
+	db NIDOKING
 	db SCYTHER
 	db PIKACHU
 	db CLEFAIRY
 	db RHYDON
-	db ABRA
+	db ALAKAZAM
 	db GASTLY
 	db DITTO
 	db PIDGEOTTO
 	db ONIX
-	db PONYTA
-	db MAGIKARP
+	db PSYDUCK
+	db RAPIDASH
 ENDC
 IF _GREEN
 	db BULBASAUR
@@ -11230,8 +11230,8 @@ IF _GREEN
 ENDC
 IF _BLUE
 	db SQUIRTLE
-	db CHARMANDER
-	db BULBASAUR
+	db HITMONLEE
+	db VOLTORB
 	db MANKEY
 	db HITMONLEE
 	db VULPIX
@@ -15919,25 +15919,25 @@ Func_6a6c: ; 6a6c (1:6a6c)
 IF _RED
 DefaultNamesPlayer: ; 6aa8 (1:6aa8)
 	db   "NEW NAME"
-	next "RED"
-	next "ASH"
-	next "JACK"
+	next "HUNTER"
+	next "HOMER"
+	next "ZORA"
 	db   "@"
 
 DefaultNamesRival: ; 6abe (1:6abe)
 	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "WENDY"
+	next "SARA"
+	next "CONNIE"
 	db   "@"
 ENDC
 
 IF _BLUE
 DefaultNamesPlayer: ; 6aa8 (1:6aa8)
 	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "JACK"
+	next "BOB"
+	next "SANTA"
 	db   "@"
 
 DefaultNamesRival: ; 6abe (1:6abe)
@@ -15971,9 +15971,9 @@ Func_6ad6: ; 6ad6 (1:6ad6)
 	jp CopyData
 IF _RED
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
-	db "NEW NAME@RED@ASH@JACK@"
+	db "NEW NAME@HUNTER@HOMER@ZORA@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
-	db "NEW NAME@BLUE@GARY@JOHN@"
+	db "NEW NAME@WENDY@SARA@CONNIE@"
 ENDC
 IF _BLUE
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
@@ -33629,9 +33629,9 @@ ViridianCity_h: ; 0x18357 to 0x18384 (45 bytes) (bank=6) (id=1)
 	db VIRIDIAN_CITY_HEIGHT, VIRIDIAN_CITY_WIDTH ; dimensions (y, x)
 	dw ViridianCityBlocks, ViridianCityTextPointers, ViridianCityScript ; blocks, texts, scripts
 	db NORTH | SOUTH | WEST ; connections
-	NORTH_MAP_CONNECTION ROUTE_2, ROUTE_2_WIDTH, ROUTE_2_HEIGHT, 5, 0, ROUTE_2_WIDTH, Route2Blocks
+	NORTH_MAP_CONNECTION ROUTE_2, ROUTE_2_WIDTH, ROUTE_2_HEIGHT, 16, 0, ROUTE_2_WIDTH, Route2Blocks
 	SOUTH_MAP_CONNECTION ROUTE_1, ROUTE_1_WIDTH, 5, 0, ROUTE_1_WIDTH, Route1Blocks, VIRIDIAN_CITY_WIDTH, VIRIDIAN_CITY_HEIGHT
-	WEST_MAP_CONNECTION ROUTE_22, ROUTE_22_WIDTH, 4, 0, ROUTE_22_HEIGHT, Route22Blocks, VIRIDIAN_CITY_WIDTH
+	WEST_MAP_CONNECTION ROUTE_1, ROUTE_1_WIDTH, 5, 0, ROUTE_1_WIDTH, Route1Blocks, VIRIDIAN_CITY_WIDTH, VIRIDIAN_CITY_HEIGHT
 	dw ViridianCityObject ; objects
 
 ViridianCityObject: ; 0x18384 (size=104)
@@ -37400,9 +37400,9 @@ Route1_h: ; 0x1c0c3 to 0x1c0e5 (34 bytes) (bank=7) (id=12)
 	db $00 ; tileset
 	db ROUTE_1_HEIGHT, ROUTE_1_WIDTH ; dimensions (y, x)
 	dw Route1Blocks, Route1TextPointers, Route1Script ; blocks, texts, scripts
-	db NORTH | SOUTH ; connections
-	NORTH_MAP_CONNECTION VIRIDIAN_CITY, VIRIDIAN_CITY_WIDTH, VIRIDIAN_CITY_HEIGHT, -3, 2, VIRIDIAN_CITY_WIDTH - 4, ViridianCityBlocks
+	db SOUTH | EAST ; connections
 	SOUTH_MAP_CONNECTION PALLET_TOWN, PALLET_TOWN_WIDTH, 0, 0, PALLET_TOWN_WIDTH, PalletTownBlocks, ROUTE_1_WIDTH, ROUTE_1_HEIGHT
+	EAST_MAP_CONNECTION VIRIDIAN_CITY, VIRIDIAN_CITY_WIDTH, 5, 0, VIRIDIAN_CITY_WIDTH, ViridianCityBlocks, ROUTE_1_WIDTH, ROUTE_1_HEIGHT
 	dw Route1Object ; objects
 
 Route1Object: ; 0x1c0e5 (size=19)
@@ -38069,12 +38069,12 @@ OaksLabScript7: ; 1cc72 (7:4c72)
 
 OaksLabScript8: ; 1cc80 (7:4c80)
 	ld a, [W_PLAYERSTARTER]
-	cp CHARMANDER
-	jr z, .Charmander ; 0x1cc85 $6
-	cp SQUIRTLE
-	jr z, .Squirtle ; 0x1cc89 $1d
-	jr .Bulbasaur ; 0x1cc8b $38
-.Charmander
+	cp HITMONLEE
+	jr z, .Hitmonlee ; 0x1cc85 $6
+	cp MR_MIME
+	jr z, .Mr_Mime ; 0x1cc89 $1d
+	jr .Gastly ; 0x1cc8b $38
+.Hitmonlee
 	ld de, .MiddleBallMovement1
 	ld a, [W_YCOORD]
 	cp $4 ; is the player standing below the table?
@@ -38087,7 +38087,7 @@ OaksLabScript8: ; 1cc80 (7:4c80)
 .MiddleBallMovement2
 	db 0,$C0,$C0,$C0,$FF
 
-.Squirtle
+.Mr_Mime
 	ld de, .RightBallMovement1
 	ld a, [W_YCOORD]
 	cp $4 ; is the player standing below the table?
@@ -38100,7 +38100,7 @@ OaksLabScript8: ; 1cc80 (7:4c80)
 .RightBallMovement2
 	db 0,$C0,$C0,$C0,$C0,$FF
 
-.Bulbasaur
+.Gastly
 	ld de, .LeftBallMovement1
 	ld a, [W_XCOORD]
 	cp $9 ; is the player standing to the right of the table?
@@ -38662,33 +38662,33 @@ OaksLabText41: ; 1d0fd (7:50fd)
 OaksLabText29: ; 1d102 (7:5102)
 OaksLabText2: ; 1d102 (7:5102)
 	db $8
-	ld a, $b1
+	ld a, $2a
 	ld [$cd3d], a
 	ld a, $3
 	ld [$cd3e], a
-	ld a, $b0
+	ld a, $2b
 	ld b, $2
 	jr OaksLabScript_1d133 ; 0x1d111 $20
 
 OaksLabText30: ; 1d113 (7:5113)
 OaksLabText3: ; 1d113 (7:5113)
 	db $8
-	ld a, $99
+	ld a, $15
 	ld [$cd3d], a
 	ld a, $4
 	ld [$cd3e], a
-	ld a, $b1
+	ld a, $2a
 	ld b, $3
 	jr OaksLabScript_1d133 ; 0x1d122 $f
 
 OaksLabText31: ; 1d124 (7:5124)
 OaksLabText4: ; 1d124 (7:5124)
 	db $8
-	ld a, $b0
+	ld a, $2b
 	ld [$cd3d], a
 	ld a, $2
 	ld [$cd3e], a
-	ld a, $99
+	ld a, $15
 	ld b, $4
 
 OaksLabScript_1d133: ; 1d133 (7:5133)
@@ -38734,12 +38734,12 @@ OaksLabScript_1d157: ; 1d157 (7:5157)
 	call DelayFrames
 	ld a, [$cf13]
 	cp $2
-	jr z, OaksLabLookAtCharmander
+	jr z, OaksLabLookAtHitmonlee
 	cp $3
 	jr z, OaksLabLookAtSquirtle
 	jr OaksLabLookAtBulbasaur
 
-OaksLabLookAtCharmander ; 0x1d195
+OaksLabLookAtHitmonlee ; 0x1d195
 	ld hl, OaksLabCharmanderText
 	jr OaksLabMonChoiceMenu
 OaksLabCharmanderText: ; 1d19a (7:519a)
@@ -43663,7 +43663,7 @@ Func_372ac: ; 372ac (d:72ac)
 	cp BULBASAUR
 	ret nz
 .ok
-	ld e, 1 ; animate titleball
+	ld e, 0 ; animate titleball
 	ld bc, TitleScroll_WaitBall
 	ld d, 0
 	jp _TitleScroll
@@ -51445,9 +51445,9 @@ TrainerNames: ; 399ff (e:59ff)
 	db "JR.TRAINER♀@"
 	db "POKéMANIAC@"
 	db "SUPER NERD@"
-	db "HIKER@"
+	db "BIG MAN@"
 	db "BIKER@"
-	db "BURGLAR@"
+	db "THIEF@"
 	db "ENGINEER@"
 	db "JUGGLER@"
 	db "FISHERMAN@"
@@ -51460,7 +51460,7 @@ TrainerNames: ; 399ff (e:59ff)
 	db "JUGGLER@"
 	db "TAMER@"
 	db "BIRD KEEPER@"
-	db "BLACKBELT@"
+	db "KARATE DOOD@"
 	db "RIVAL1@"
 	db "PROF.OAK@"
 	db "CHIEF@"
@@ -51470,7 +51470,7 @@ TrainerNames: ; 399ff (e:59ff)
 	db "COOLTRAINER♂@"
 	db "COOLTRAINER♀@"
 	db "BRUNO@"
-	db "BROCK@"
+	db "DAVID@"
 	db "MISTY@"
 	db "LT.SURGE@"
 	db "ERIKA@"
@@ -51780,7 +51780,7 @@ LoneMoves: ; 39d22 (e:5d22)
 ; first byte:  pokemon in the trainer's party that gets the move
 ; second byte: move
 ; unterminated
-	db 1,BIDE
+	db 1,ICE_BEAM
 	db 1,BUBBLEBEAM
 	db 2,THUNDERBOLT
 	db 2,MEGA_DRAIN
@@ -51820,7 +51820,7 @@ if _YELLOW
 	db 0
 
 	db BROCK,$1
-	db 2,3,BIND
+	db 2,3,ICE BEAM
 	db 2,4,BIDE
 	db 0
 
@@ -51988,17 +51988,17 @@ TrainerDataPointers: ; 39d3b (e:5d3b)
 	; null-terminated
 
 YoungsterData: ; 39d99 (e:5d99)
-	db 11,RATTATA,EKANS,0
-	db 14,SPEAROW,0
-	db 10,RATTATA,RATTATA,ZUBAT,0
-	db 14,RATTATA,EKANS,ZUBAT,0
-	db 15,RATTATA,SPEAROW,0
-	db 17,SLOWPOKE,0
+	db 11,EKANS,ODDISH,0
+	db 16,RATICATE,0
+	db 10,METAPOD,SPEAROW,MANKEY,0
+	db 14,GROWLITHE,EKANS,ZUBAT,0
+	db 15,RATTATA,GASTLY,0
+	db 17,PIKACHU,0
 	db 14,EKANS,SANDSHREW,0
 	db 21,NIDORAN_M,0
 	db 21,EKANS,0
 	db 19,SANDSHREW,ZUBAT,0
-	db 17,RATTATA,RATTATA,RATICATE,0
+	db $FF,17,RATTATA,18,RATTATA,20,RATICATE,0
 	db 18,NIDORAN_M,NIDORINO,0
 	db 17,SPEAROW,RATTATA,RATTATA,SPEAROW,0
 if _YELLOW
@@ -52010,9 +52010,9 @@ if _YELLOW
 	db 6,METAPOD,CATERPIE,METAPOD,0
 	db 10,CATERPIE,0
 else
-	db 6,WEEDLE,CATERPIE,0
+	db $FF,6,KAKUNA,9,BEEDRILL,0
 	db 7,WEEDLE,KAKUNA,WEEDLE,0
-	db 9,WEEDLE,0
+	db 12,BUTTERFREE,0
 endc
 	db 10,CATERPIE,WEEDLE,CATERPIE,0
 	db 9,WEEDLE,KAKUNA,CATERPIE,METAPOD,0
@@ -52075,7 +52075,7 @@ JrTrainerMData: ; 39e78 (e:5e78)
 if _YELLOW
 	db 9,DIGLETT,SANDSHREW,0
 else
-	db 11,DIGLETT,SANDSHREW,0
+	db $FF,7,SEEL,8,SEEL,0
 endc
 	db 14,RATTATA,EKANS,0
 	db 18,MANKEY,0
@@ -52328,12 +52328,12 @@ if _YELLOW
 	db $FF,9,SPEAROW,8,EEVEE,0
 	db $FF,18,SPEAROW,15,SANDSHREW,15,RATTATA,17,EEVEE,0
 else
-	db 5,SQUIRTLE,0
-	db 5,BULBASAUR,0
-	db 5,CHARMANDER,0
-	db $FF,9,PIDGEY,8,SQUIRTLE,0
-	db $FF,9,PIDGEY,8,BULBASAUR,0
-	db $FF,9,PIDGEY,8,CHARMANDER,0
+	db 5,MR_MIME,0
+	db 5,GASTLY,0
+	db 5,HITMONLEE,0
+	db $FF,9,PIDGEY,8,MR_MIME,0
+	db $FF,9,PIDGEY,8,GASTLY,0
+	db $FF,9,PIDGEY,8,HITMONLEE,0
 	db $FF,18,PIDGEOTTO,15,ABRA,15,RATTATA,17,SQUIRTLE,0
 	db $FF,18,PIDGEOTTO,15,ABRA,15,RATTATA,17,BULBASAUR,0
 	db $FF,18,PIDGEOTTO,15,ABRA,15,RATTATA,17,CHARMANDER,0
@@ -52445,9 +52445,9 @@ BrunoData: ; 3a3a9 (e:63a9)
 	db $FF,53,ONIX,55,HITMONCHAN,55,HITMONLEE,56,ONIX,58,MACHAMP,0
 BrockData: ; 3a3b5 (e:63b5)
 if _YELLOW
-	db $FF,10,GEODUDE,12,ONIX,0
+	db $FF,14,LAPRAS,12,ONIX,0
 else
-	db $FF,12,GEODUDE,14,ONIX,0
+	db $FF,12,LAPRAS,7,JYNX,5,SEEL,0
 endc
 MistyData: ; 3a3bb (e:63bb)
 	db $FF,18,STARYU,21,STARMIE,0
@@ -57372,7 +57372,7 @@ HandlePlayerBlackOut: ; 3c837 (f:4837)
 	call PrintText
 	ld a, [W_CURMAP]
 	cp OAKS_LAB
-	ret z            ; starter battle in oak's lab: don't black out
+	ret z            ;  battle in oak's lab: don't black out
 .notSony1Battle
 	ld b, $0
 	call GoPAL_SET
@@ -65828,7 +65828,7 @@ ArcanineDexEntry: ; 40733 (10:4733)
 	db "@"
 
 MewDexEntry: ; 40746 (10:4746)
-	db "NEW SPECIE@"
+	db "Curse PKM@"
 	db 1,4
 	dw 90
 	TX_FAR _MewDexEntry
@@ -82112,7 +82112,7 @@ Route2_h: ; 54000 (15:4000)
 	dw Route2Blocks, Route2TextPointers, Route2Script
 	db NORTH | SOUTH ;Connection Byte
 	NORTH_MAP_CONNECTION PEWTER_CITY, PEWTER_CITY_WIDTH, PEWTER_CITY_HEIGHT, -3, 2, PEWTER_CITY_WIDTH - 4, PewterCityBlocks
-	SOUTH_MAP_CONNECTION VIRIDIAN_CITY, VIRIDIAN_CITY_WIDTH, -3, 2, VIRIDIAN_CITY_WIDTH - 4, ViridianCityBlocks, ROUTE_2_WIDTH, ROUTE_2_HEIGHT
+	SOUTH_MAP_CONNECTION VIRIDIAN_CITY, VIRIDIAN_CITY_WIDTH, -32, 2, VIRIDIAN_CITY_WIDTH - 4, ViridianCityBlocks, ROUTE_2_WIDTH, ROUTE_2_HEIGHT
 	dw Route2Object ;Object Data Pointer
 
 Route2Object: ; 0x54022 (size=72)
@@ -90710,7 +90710,7 @@ Gym1CityName: ; 5c3ad (17:43ad)
 	db "PEWTER CITY@"
 
 Gym1LeaderName: ; 5c3b9 (17:43b9)
-	db "BROCK@"
+	db "DAVID@"
 
 Func_5c3bf: ; 5c3bf (17:43bf)
 	xor a

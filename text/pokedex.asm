@@ -199,13 +199,13 @@ _ArcanineDexEntry::
 	dex
 
 _MewDexEntry::
-	text "So rare that it"
-	next "is still said to"
-	next "be a mirage by"
+	text "A cursed sprit"
+	next "that kills"
+	next "other pokemon"
 
-	page "many experts. Only"
-	next "a few people have"
-	next "seen it worldwide"
+	page "and trainers for"
+	next "fun. Beware of"
+	next "this pokemon."
 	dex
 
 _GyaradosDexEntry::

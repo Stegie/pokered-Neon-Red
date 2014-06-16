@@ -1,15 +1,16 @@
 _Route1ViridianMartSampleText:: ; 8d5bf (23:55bf)
-	text "Hi! I work at a"
-	line "#MON MART."
+	text "Hey you!"
+	line "Yeah I have."
 
-	para "It's a convenient"
-	line "shop, so please"
-	cont "visit us in"
-	cont "VIRIDIAN CITY."
+	para "an extra potion"
+	line "please use it"
+	cont "and see what it"
+	cont "does."
 
-	para "I know, I'll give"
-	line "you a sample!"
-	cont "Here you go!"
+	para "You know what"
+	line "A potion does?"
+	cont "Well take one!"
+	cont "Anyways"
 	prompt
 
 _UnnamedText_1cae8:: ; 8d643 (23:5643)
@@ -19,8 +20,8 @@ _UnnamedText_1cae8:: ; 8d643 (23:5643)
 	text "!@@"
 
 _UnnamedText_1caee:: ; 8d652 (23:5652)
-	text "We also carry"
-	line "# BALLs for"
+	text "I need to get"
+	line "back to"
 	cont "catching #MON!"
 	done
 
@@ -30,16 +31,16 @@ _UnnamedText_1caf3:: ; 8d67c (23:567c)
 	done
 
 _Route1Text2:: ; 8d69f (23:569f)
-	text "See those ledges"
-	line "along the road?"
+	text "Trainers are"
+	line "pretty experienced?"
 
-	para "It's a bit scary,"
-	line "but you can jump"
-	cont "from them."
+	para "nowadays I cant,"
+	line "even seem to"
+	cont "win a fight"
 
-	para "You can get back"
-	line "to PALLET TOWN"
-	cont "quicker that way."
+	para "Maybe I should"
+	line "give up and just"
+	cont "go home."
 	done
 
 _Route1Text3:: ; 8d720 (23:5720)

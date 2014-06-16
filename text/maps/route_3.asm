@@ -9,65 +9,78 @@ _Route3Text1:: ; 8d779 (23:5779)
 	done
 
 _Route3BattleText1:: ; 8d7d5 (23:57d5)
-	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	text "A Person. I see"
+	line "a PERSON!"
 	done
 
 _Route3EndBattleText1:: ; 8d7f9 (23:57f9)
-	text "You"
-	line "beat me again!"
+	text "Why can't I "
+	line "win?"
 	prompt
 
 _Route3AfterBattleText1:: ; 8d80d (23:580d)
-	text "There are other"
-	line "kinds of #MON"
-	cont "than those found"
-	cont "in the forest!"
+	text "Bug, bugs,and"
+	line "more bugs"
+	cont "crawling up"
+	cont "my arms!"
 	done
 
 _Route3BattleText2:: ; 8d84c (23:584c)
-	text "Hi! I like shorts!"
-	line "They're comfy and"
-	cont "easy to wear!"
+	text "Pokeballs...!"
+	line "Check... Items"
+	cont "...Check!"
+	cont "Ok I am all"
+	cont "ready for a"
+	cont "battle"
 	done
 
 _Route3EndBattleText2:: ; 8d87f (23:587f)
-	text "I don't"
-	line "believe it!"
+	text "But I was"
+	line "all prepared"
 	prompt
 
 _Route3AfterBattleText2:: ; 8d893 (23:5893)
-	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	text "Battles take"
+	line "concentration"
+	cont "For instance if"
+	cont "I send out a"
+	cont "ratatta and you"
+	cont "have a fighting"
+	cont "pokemon I am"
+	cont "certainly in"
+	cont "trouble."
 	done
 
 _Route3BattleText3:: ; 8d8d0 (23:58d0)
-	text "You looked at me,"
-	line "didn't you?"
+	text "My pokemon"
+	line "caught your"
+	cont "attention didnt"
+	cont "they?"
 	done
 
 _Route3EndBattleText3:: ; 8d8ee (23:58ee)
-	text "You're"
-	line "mean!"
+	text "I didnt want"
+	line "to fight!"
 	prompt
 
 _Route3AfterBattleText3:: ; 8d8fb (23:58fb)
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "I won almost"
+	line "all my battles"
+	cont "in the Hoenn"
+	cont "region"
 	done
 
 _Route3BattleText4:: ; 8d924 (23:5924)
-	text "Are you a trainer?"
-	line "Let's fight!"
+	text "I am sure you"
+	line "know by now..."
+	cont "TRAINERS FIGHT!"
 	done
 
 _Route3EndBattleText4:: ; 8d944 (23:5944)
-	text "If I"
-	line "had new #MON I"
-	cont "would've won!"
+	text "My battling"
+	line "skills were"
+	cont "not up to"
+	cont "perfection."
 	prompt
 
 _Route3AfterBattleText4:: ; 8d966 (23:5966)

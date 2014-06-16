@@ -369,7 +369,7 @@ Func_216be: ; 216be (8:56be)
 	ret
 
 BillsPCMenuText: ; 216e1 (8:56e1)
-	db "WITHDRAW ",$4a,$4e,"DEPOSIT ",$4a,$4e,"RELEASE ",$4a,$4e,"CHANGE BOX",$4e,"SEE YA!@"
+	db "TAKE OUT ",$4a,$4e,"PUT IN ",$4a,$4e,"LET GO ",$4a,$4e,"CHANGE BOX",$4e,"DONE!@"
 
 BoxNoPCText: ; 21713 (8:5713)
 	db "BOX No.@"
