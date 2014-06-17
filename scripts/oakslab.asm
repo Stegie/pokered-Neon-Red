@@ -193,11 +193,11 @@ OaksLabScript7: ; 1cc72 (7:4c72)
 
 OaksLabScript8: ; 1cc80 (7:4c80)
 	ld a, [W_PLAYERSTARTER]
-	cp HITMONLEE
+	cp STARTER1
 	jr z, .Hitmonlee ; 0x1cc85 $6
-	cp MR_MIME
-	jr z, .Mr_Mime ; 0x1cc89 $1d
-	jr .Gastly ; 0x1cc8b $38
+	cp STARTER2
+	jr z, .Mew ; 0x1cc89 $1d
+	jr .Mr_Mime ; 0x1cc8b $38
 .Hitmonlee
 	ld de, .MiddleBallMovement1
 	ld a, [W_YCOORD]
@@ -211,7 +211,7 @@ OaksLabScript8: ; 1cc80 (7:4c80)
 .MiddleBallMovement2
 	db 0,$C0,$C0,$C0,$FF
 
-.Mr_Mime
+.Mew
 	ld de, .RightBallMovement1
 	ld a, [W_YCOORD]
 	cp $4 ; is the player standing below the table?
@@ -224,7 +224,7 @@ OaksLabScript8: ; 1cc80 (7:4c80)
 .RightBallMovement2
 	db 0,$C0,$C0,$C0,$C0,$FF
 
-.Gastly
+.Mr_Mime
 	ld de, .LeftBallMovement1
 	ld a, [W_XCOORD]
 	cp $9 ; is the player standing to the right of the table?
@@ -768,33 +768,33 @@ OaksLabText41: ; 1d0fd (7:50fd)
 OaksLabText29: ; 1d102 (7:5102)
 OaksLabText2: ; 1d102 (7:5102)
 	db $8
-	ld a, MR_MIME
+	ld a, STARTER2
 	ld [wWhichTrade], a
 	ld a, $3
 	ld [wTrainerEngageDistance], a
-	ld a, HITMONLEE
+	ld a, STARTER1
 	ld b, $2
 	jr OaksLabScript_1d133 ; 0x1d111 $20
 
 OaksLabText30: ; 1d113 (7:5113)
 OaksLabText3: ; 1d113 (7:5113)
 	db $8
-	ld a, MEW
+	ld a, STARTER3
 	ld [wWhichTrade], a
 	ld a, $4
 	ld [wTrainerEngageDistance], a
-	ld a, MR_MIME
+	ld a, STARTER2
 	ld b, $3
 	jr OaksLabScript_1d133 ; 0x1d122 $f
 
 OaksLabText31: ; 1d124 (7:5124)
 OaksLabText4: ; 1d124 (7:5124)
 	db $8
-	ld a, HITMONLEE
+	ld a, STARTER1
 	ld [wWhichTrade], a
 	ld a, $2
 	ld [wTrainerEngageDistance], a
-	ld a, MEW
+	ld a, STARTER3
 	ld b, $4
 
 OaksLabScript_1d133: ; 1d133 (7:5133)
