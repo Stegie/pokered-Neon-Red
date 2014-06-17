@@ -1,4 +1,4 @@
-_UnnamedText_5c4a3:: ; 98000 (26:4000)
+_PewterGymText_5c4a3:: ; 98000 (26:4000)
 	text "Hmm maybe I should"
 	line "train harder."
 	cont "I was thinking"
@@ -49,7 +49,7 @@ _TM34NoRoomText:: ; 981ab (26:41ab)
 	line "room for this!"
 	done
 
-_UnnamedText_5c4bc:: ; 981c9 (26:41c9)
+_PewterGymText_5c4bc:: ; 981c9 (26:41c9)
 	text "HA awsome job"
 	line "I was no match"
 	cont "for you at all."
@@ -61,7 +61,7 @@ _UnnamedText_5c4bc:: ; 981c9 (26:41c9)
 	para $52, " received"
 	line "the ICEBADGE!@@"
 
-_UnnamedText_5c4c1:: ; 98232 (26:4232)
+_PewterGymText_5c4c1:: ; 98232 (26:4232)
 	db $0
 	para "That's an official"
 	line "#MON LEAGUE"
@@ -101,7 +101,7 @@ _PewterGymAfterBattleText1:: ; 98325 (26:4325)
 	cont "down!"
 	done
 
-_UnnamedText_5c515:: ; 98351 (26:4351)
+_PewterGymText_5c515:: ; 98351 (26:4351)
 	text "Hiya! Do you want"
 	line "to know a secret"
 	cont "DAVID has ice "
@@ -115,12 +115,12 @@ _UnnamedText_5c515:: ; 98351 (26:4351)
 	line "No?"
 	done
 
-_UnnamedText_5c51a:: ; 983dc (26:43dc)
+_PewterGymText_5c51a:: ; 983dc (26:43dc)
 	text "Exactly my"
 	line "thought too!"
 	prompt
 
-_UnnamedText_5c51f:: ; 983fc (26:43fc)
+_PewterGymText_5c51f:: ; 983fc (26:43fc)
 	text "By using electric"
 	line "pokemon it would"
 	cont "be super effective"
@@ -132,13 +132,13 @@ _UnnamedText_5c51f:: ; 983fc (26:43fc)
 	cont "made easier!"
 	done
 
-_UnnamedText_5c524:: ; 98476 (26:4476)
+_PewterGymText_5c524:: ; 98476 (26:4476)
 	text "It's a free"
 	line "service! Let's"
 	cont "get happening!"
 	prompt
 
-_UnnamedText_5c529:: ; 9849f (26:449f)
+_PewterGymText_5c529:: ; 9849f (26:449f)
 	text "Just as I thought!"
 	line "You're #MON"
 	cont "champ material!"
