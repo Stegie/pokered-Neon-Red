@@ -33,10 +33,10 @@ _ReceivingHM01Text:: ; 81347 (20:5347)
 _ReceivedHM01Text:: ; 8140d (20:540d)
 	text $52, " got"
 	line "@"
-	TX_RAM $cf4b
+	TX_RAM wcf4b
 	text "!@@"
 
-_UnnamedText_61932:: ; 8141c (20:541c)
+_SSAnne7Text_61932:: ; 8141c (20:541c)
 	text "CAPTAIN: Whew!"
 
 	para "Now that I'm not"
