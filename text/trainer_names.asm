@@ -33,7 +33,7 @@ TrainerNames: ; 399ff (e:59ff)
 	db "COOLTRAINER♀@"
 	db "BRUNO@"
 	db "DAVID@"
-	db "MISTY@"
+	db "IMAKUNI?@"
 	db "LT.SURGE@"
 	db "ERIKA@"
 	db "KOGA@"
