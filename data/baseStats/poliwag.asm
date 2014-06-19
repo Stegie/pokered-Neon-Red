@@ -9,7 +9,7 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 255 ; catch rate
 db 77 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw PoliwagPicFront
 dw PoliwagPicBack
 ; attacks known at lvl 0

@@ -9,7 +9,7 @@ db PSYCHIC ; species type 1
 db PSYCHIC ; species type 2
 db 200 ; catch rate
 db 73 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw AbraPicFront
 dw AbraPicBack
 ; attacks known at lvl 0

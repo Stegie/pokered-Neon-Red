@@ -9,7 +9,7 @@ db BUG ; species type 1
 db GRASS ; species type 2
 db 190 ; catch rate
 db 70 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw ParasPicFront
 dw ParasPicBack
 ; attacks known at lvl 0

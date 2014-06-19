@@ -9,7 +9,7 @@ db BUG ; species type 1
 db BUG ; species type 2
 db 255 ; catch rate
 db 53 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw CaterpiePicFront
 dw CaterpiePicBack
 ; attacks known at lvl 0

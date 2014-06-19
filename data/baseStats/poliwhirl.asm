@@ -9,7 +9,7 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 120 ; catch rate
 db 131 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw PoliwhirlPicFront
 dw PoliwhirlPicBack
 ; attacks known at lvl 0

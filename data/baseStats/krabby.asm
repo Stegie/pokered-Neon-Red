@@ -9,7 +9,7 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 225 ; catch rate
 db 115 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw KrabbyPicFront
 dw KrabbyPicBack
 ; attacks known at lvl 0

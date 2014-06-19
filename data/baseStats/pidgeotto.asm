@@ -9,7 +9,7 @@ db NORMAL ; species type 1
 db FLYING ; species type 2
 db 120 ; catch rate
 db 113 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw PidgeottoPicFront
 dw PidgeottoPicBack
 ; attacks known at lvl 0

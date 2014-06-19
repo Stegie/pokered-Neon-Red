@@ -9,7 +9,7 @@ db FIGHTING ; species type 1
 db FIGHTING ; species type 2
 db 45 ; catch rate
 db 140 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw HitmonchanPicFront
 dw HitmonchanPicBack
 ; attacks known at lvl 0

@@ -9,7 +9,7 @@ db FIRE ; species type 1
 db FIRE ; species type 2
 db 45 ; catch rate
 db 65 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw CharmanderPicFront
 dw CharmanderPicBack
 ; attacks known at lvl 0

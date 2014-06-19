@@ -9,7 +9,7 @@ db GRASS ; species type 1
 db POISON ; species type 2
 db 120 ; catch rate
 db 151 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw WeepinbellPicFront
 dw WeepinbellPicBack
 ; attacks known at lvl 0

@@ -9,7 +9,7 @@ db GRASS ; species type 1
 db POISON ; species type 2
 db 255 ; catch rate
 db 84 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw BellsproutPicFront
 dw BellsproutPicBack
 ; attacks known at lvl 0

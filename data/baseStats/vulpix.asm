@@ -9,7 +9,7 @@ db FIRE ; species type 1
 db FIRE ; species type 2
 db 190 ; catch rate
 db 63 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw VulpixPicFront
 dw VulpixPicBack
 ; attacks known at lvl 0

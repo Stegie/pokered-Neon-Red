@@ -9,7 +9,7 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 190 ; catch rate
 db 80 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw PsyduckPicFront
 dw PsyduckPicBack
 ; attacks known at lvl 0

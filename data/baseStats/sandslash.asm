@@ -9,7 +9,7 @@ db GROUND ; species type 1
 db GROUND ; species type 2
 db 90 ; catch rate
 db 163 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw SandslashPicFront
 dw SandslashPicBack
 ; attacks known at lvl 0

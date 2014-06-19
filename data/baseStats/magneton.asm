@@ -9,7 +9,7 @@ db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 60 ; catch rate
 db 161 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw MagnetonPicFront
 dw MagnetonPicBack
 ; attacks known at lvl 0

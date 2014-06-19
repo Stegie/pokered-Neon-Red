@@ -9,7 +9,7 @@ db NORMAL ; species type 1
 db NORMAL ; species type 2
 db 30 ; catch rate
 db 255 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw ChanseyPicFront
 dw ChanseyPicBack
 ; attacks known at lvl 0

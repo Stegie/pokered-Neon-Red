@@ -9,7 +9,7 @@ db GROUND ; species type 1
 db GROUND ; species type 2
 db 255 ; catch rate
 db 81 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw DiglettPicFront
 dw DiglettPicBack
 ; attacks known at lvl 0

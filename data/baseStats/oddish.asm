@@ -9,7 +9,7 @@ db GRASS ; species type 1
 db POISON ; species type 2
 db 255 ; catch rate
 db 78 ; base exp yield
-db $55 ; sprite dimensions
+db $77 ; sprite dimensions
 dw OddishPicFront
 dw OddishPicBack
 ; attacks known at lvl 0

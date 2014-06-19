@@ -9,7 +9,7 @@ db GROUND ; species type 1
 db GROUND ; species type 2
 db 75 ; catch rate
 db 124 ; base exp yield
-db $66 ; sprite dimensions
+db $77 ; sprite dimensions
 dw MarowakPicFront
 dw MarowakPicBack
 ; attacks known at lvl 0
