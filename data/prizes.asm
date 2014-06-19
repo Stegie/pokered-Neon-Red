@@ -12,10 +12,10 @@ NoThanksText: ; 5284f (14:684f)
 	db "NO THANKS@"
 
 PrizeMenuMon1Entries: ; 52859 (14:6859)
-	db ABRA
-	db CLEFAIRY
+	db CHARMANDER
+	db BULBASAUR
 IF _RED
-	db NIDORINA
+	db WARTORTLE
 ENDC
 IF _BLUE
 	db NIDORINO
