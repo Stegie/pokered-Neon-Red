@@ -10,6 +10,7 @@ PICS_2 EQU $A
 PICS_3 EQU $B
 PICS_4 EQU $C
 PICS_5 EQU $D
+PICS_6 EQU $2d
 
 
 INCLUDE "home.asm"
@@ -5191,7 +5192,7 @@ KakunaPicBack::       INCBIN "pic/monback/kakunab.pic"
 BeedrillPicFront::    INCBIN "pic/bmon/beedrill.pic"
 BeedrillPicBack::     INCBIN "pic/monback/beedrillb.pic"
 
-FossilKabutopsPic::   INCBIN "pic/bmon/fossilkabutops.pic"
+
 
 
 SECTION "Battle (bank B)", ROMX, BANK[$B]
@@ -5279,30 +5280,6 @@ INCLUDE "engine/battle/c.asm"
 
 SECTION "Pics 5", ROMX, BANK[PICS_5]
 
-BulbasaurPicFront::    INCBIN "pic/bmon/bulbasaur.pic"
-BulbasaurPicBack::     INCBIN "pic/monback/bulbasaurb.pic"
-VenusaurPicFront::     INCBIN "pic/bmon/venusaur.pic"
-VenusaurPicBack::      INCBIN "pic/monback/venusaurb.pic"
-TentacruelPicFront::   INCBIN "pic/bmon/tentacruel.pic"
-TentacruelPicBack::    INCBIN "pic/monback/tentacruelb.pic"
-GoldeenPicFront::      INCBIN "pic/bmon/goldeen.pic"
-GoldeenPicBack::       INCBIN "pic/monback/goldeenb.pic"
-SeakingPicFront::      INCBIN "pic/bmon/seaking.pic"
-SeakingPicBack::       INCBIN "pic/monback/seakingb.pic"
-PonytaPicFront::       INCBIN "pic/bmon/ponyta.pic"
-RapidashPicFront::     INCBIN "pic/bmon/rapidash.pic"
-PonytaPicBack::        INCBIN "pic/monback/ponytab.pic"
-RapidashPicBack::      INCBIN "pic/monback/rapidashb.pic"
-RattataPicFront::      INCBIN "pic/bmon/rattata.pic"
-RattataPicBack::       INCBIN "pic/monback/rattatab.pic"
-RaticatePicFront::     INCBIN "pic/bmon/raticate.pic"
-RaticatePicBack::      INCBIN "pic/monback/raticateb.pic"
-NidorinoPicFront::     INCBIN "pic/bmon/nidorino.pic"
-NidorinoPicBack::      INCBIN "pic/monback/nidorinob.pic"
-NidorinaPicFront::     INCBIN "pic/bmon/nidorina.pic"
-NidorinaPicBack::      INCBIN "pic/monback/nidorinab.pic"
-GeodudePicFront::      INCBIN "pic/bmon/geodude.pic"
-GeodudePicBack::       INCBIN "pic/monback/geodudeb.pic"
 PorygonPicFront::      INCBIN "pic/bmon/porygon.pic"
 PorygonPicBack::       INCBIN "pic/monback/porygonb.pic"
 AerodactylPicFront::   INCBIN "pic/bmon/aerodactyl.pic"
@@ -5319,8 +5296,8 @@ WartortlePicFront::    INCBIN "pic/bmon/wartortle.pic"
 WartortlePicBack::     INCBIN "pic/monback/wartortleb.pic"
 CharizardPicFront::    INCBIN "pic/bmon/charizard.pic"
 CharizardPicBack::     INCBIN "pic/monback/charizardb.pic"
-FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
-GhostPic::             INCBIN "pic/other/ghost.pic"
+
+
 OddishPicFront::       INCBIN "pic/bmon/oddish.pic"
 OddishPicBack::        INCBIN "pic/monback/oddishb.pic"
 GloomPicFront::        INCBIN "pic/bmon/gloom.pic"
@@ -6545,3 +6522,33 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+SECTION "Pics 6", ROMX, BANK[PICS_6]
+
+BulbasaurPicFront::    INCBIN "pic/bmon/bulbasaur.pic"
+BulbasaurPicBack::     INCBIN "pic/monback/bulbasaurb.pic"
+VenusaurPicFront::     INCBIN "pic/bmon/venusaur.pic"
+VenusaurPicBack::      INCBIN "pic/monback/venusaurb.pic"
+TentacruelPicFront::   INCBIN "pic/bmon/tentacruel.pic"
+TentacruelPicBack::    INCBIN "pic/monback/tentacruelb.pic"
+GoldeenPicFront::      INCBIN "pic/bmon/goldeen.pic"
+GoldeenPicBack::       INCBIN "pic/monback/goldeenb.pic"
+SeakingPicFront::      INCBIN "pic/bmon/seaking.pic"
+SeakingPicBack::       INCBIN "pic/monback/seakingb.pic"
+PonytaPicFront::       INCBIN "pic/bmon/ponyta.pic"
+RapidashPicFront::     INCBIN "pic/bmon/rapidash.pic"
+PonytaPicBack::        INCBIN "pic/monback/ponytab.pic"
+RapidashPicBack::      INCBIN "pic/monback/rapidashb.pic"
+RattataPicFront::      INCBIN "pic/bmon/rattata.pic"
+RattataPicBack::       INCBIN "pic/monback/rattatab.pic"
+RaticatePicFront::     INCBIN "pic/bmon/raticate.pic"
+RaticatePicBack::      INCBIN "pic/monback/raticateb.pic"
+NidorinoPicFront::     INCBIN "pic/bmon/nidorino.pic"
+NidorinoPicBack::      INCBIN "pic/monback/nidorinob.pic"
+NidorinaPicFront::     INCBIN "pic/bmon/nidorina.pic"
+NidorinaPicBack::      INCBIN "pic/monback/nidorinab.pic"
+GeodudePicFront::      INCBIN "pic/bmon/geodude.pic"
+GeodudePicBack::       INCBIN "pic/monback/geodudeb.pic"
+FossilKabutopsPic::   INCBIN "pic/bmon/fossilkabutops.pic"
+FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
+GhostPic::             INCBIN "pic/other/ghost.pic"
