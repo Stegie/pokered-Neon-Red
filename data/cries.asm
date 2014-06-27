@@ -190,3 +190,10 @@ CryData: ; 39446 (e:5446)
 	db $21, $55, $01; Bellsprout
 	db $25, $44, $20; Weepinbell
 	db $25, $66, $CC; Victreebel
+	db $1A, $3D, $80; Umbreon
+	db $1D, $11, $40; Baisen
+	db $1C, $30, $40; Energuy
+	db $16, $00, $80; Scizor
+	db $0F, $3C, $C0; Dragor
+	db $17, $00, $80; Oceaneel
+	db $1C, $98, $FF; Kruno	

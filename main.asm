@@ -11,6 +11,7 @@ PICS_3 EQU $B
 PICS_4 EQU $C
 PICS_5 EQU $D
 PICS_6 EQU $2d
+PICS_7 EQU $2e
 
 
 INCLUDE "home.asm"
@@ -70,7 +71,7 @@ Func_40b0::
 
 MewPicFront:: INCBIN "pic/bmon/mew.pic"
 MewPicBack::  INCBIN "pic/monback/mewb.pic"
-INCLUDE "data/baseStats/mew.asm"
+
 
 INCLUDE "engine/battle/safari_zone.asm"
 
@@ -6552,3 +6553,19 @@ GeodudePicBack::       INCBIN "pic/monback/geodudeb.pic"
 FossilKabutopsPic::   INCBIN "pic/bmon/fossilkabutops.pic"
 FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
 GhostPic::             INCBIN "pic/other/ghost.pic"
+UmbreonPicFront::      INCBIN "pic/bmon/umbreon.pic"
+UmbreonPicBack::       INCBIN "pic/monback/umbreonb.pic"
+
+SECTION "Pics 7", ROMX, BANK[PICS_7]
+BaisenPicFront::       INCBIN "pic/bmon/baisen.pic"
+BaisenPicBack::        INCBIN "pic/monback/baisenb.pic"
+EnerguyPicFront::      INCBIN "pic/bmon/energuy.pic"
+EnerguyPicBack::       INCBIN "pic/monback/energuyb.pic"
+ScizorPicFront::       INCBIN "pic/bmon/scizor.pic"
+ScizorPicBack::        INCBIN "pic/monback/scizorb.pic"
+DRAGORPicFront::       INCBIN "pic/bmon/dragor.pic"
+DRAGORPicBack::        INCBIN "pic/monback/dragorb.pic"
+OceaneelPicFront::     INCBIN "pic/bmon/oceaneel.pic"
+OceaneelPicBack::      INCBIN "pic/monback/oceaneelb.pic"
+KrunoPicFront::        INCBIN "pic/bmon/kruno.pic"
+KrunoPicBack::         INCBIN "pic/monback/krunob.pic"

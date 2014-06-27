@@ -29,8 +29,8 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw UmbreonDexEntry
+	dw BaisenDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -48,19 +48,19 @@ PokedexEntryPointers: ; 4047e (10:447e)
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw EnerguyDexEntry
 	dw MagmarDexEntry
-	dw MissingNoDexEntry
+	dw ScizorDexEntry
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw MissingNoDexEntry
+	dw DragorDexEntry
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
 	dw TaurosDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw OceaneelDexEntry
+	dw KrunoDexEntry
 	dw MissingNoDexEntry
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
@@ -1257,3 +1257,52 @@ MissingNoDexEntry: ; 40fe5 (10:4fe5)
 	db 10 ; 1.0 m
 	db 100 ; 10.0 kg
 	db 0,"コメント さくせいちゅう@" ; コメント作成中 (Comment to be written)
+	
+UmbreonDexEntry:
+	db "NITEDOG@"
+	db 3,3
+	dw 59
+	TX_FAR _UmbreonDexEntry
+	db "@"
+	
+BaisenDexEntry:
+	db "CHARGING@"
+	db 6,4
+	dw 420
+	TX_FAR _BaisenDexEntry
+	db "@"
+	
+EnerguyDexEntry:
+	db "ANTIMATTER@"
+	db 200,4
+	dw 0
+	TX_FAR _EnerguyDexEntry
+	db "@"
+	
+ScizorDexEntry
+	db "STEELBUG"
+	db 5,11
+	dw 260
+	TX_FAR _ScizorDexEntry
+	db "@"
+
+DragorDexEntry
+	db "DRAGON"
+	db 55,0
+	dw 453
+	TX_FAR _DragorDexEntry
+	db "@"
+	
+OceaneelDexEntry
+	db "ELECTRIC"
+	db 2,9
+	dw 76
+	TX_FAR _OceaneelDexEntry
+	db "@"
+	
+KrunoDexEntry
+	db "MAGI"
+	db 3,2
+	dw 76
+	TX_FAR _KrunoDexEntry
+	db "@"

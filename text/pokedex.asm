@@ -1508,3 +1508,72 @@ _VictreebelDexEntry::
 	next "from there"
 	dex
 
+_UmbreonDexEntry::
+	text "Wandering in"
+	next "the nightime,"
+	next "it is said to"
+	
+	page "hear enemies"
+	next "from miles"
+	next "away"
+	dex
+	
+_BaisenDexEntry::
+	text "The evolved form"
+	next "of TAUROS, this"
+	next "POKEMON is capabale"
+	
+	page "of reducing rocks"
+	next "to dust with its"
+	next "horns"
+	dex
+	
+_EnerguyDexEntry::
+	text "It has never been"
+	next "recorded. It is"
+	next "antimatter, and"
+	
+	page "cannot be caught"
+	next "without a special"
+	next "POKEBALL"
+	dex
+	
+_ScizorDexEntry::
+	text "Its steel claws"
+	next "can rip through"
+	next "metal. Other"
+	
+	page "Pokemon call"
+	next "it the"
+	next "protector"
+	dex
+	
+_DragorDexEntry::
+	text "It uses strong"
+	next "multi elemental"
+	next "paralyzer attacks"
+	
+	page "to neutralize"
+	next "enemies. It also"
+	next "breathes fire."
+	dex
+	
+_OceaneelDexEntry::
+	text "This electric eel"
+	next "can swim faster"
+	next "than a full grown"
+	
+	page "GYARADOS. Hits"
+	next "several targest"
+	next "with one shock"
+	dex
+	
+_KrunoDexEntry::
+	text "Kruno is said to"
+	next "be the protector"
+	next "of many weaker"
+	
+	page "kinds of POKEMON."
+	next "Few have ever seen"
+	next "its hooded face"
+	dex
