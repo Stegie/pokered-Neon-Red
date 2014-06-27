@@ -1,14 +1,14 @@
 Route1Mons:
 	db $19
 	IF !_YELLOW
-		db 4,UMBREON
-		db 2,UMBREON
-		db 2,BAISEN
-		db 3,BAISEN
-		db 2,ENERGUY
-		db 3,ENERGUY
-		db 3,SCIZOR
-		db 4,DRAGOR
+		db 4,OCEANEEL
+		db 2,OCEANEEL
+		db 2,OCEANEEL
+		db 3,OCEANEEL
+		db 2,KRUNO
+		db 3,KRUNO
+		db 3,KRUNO
+		db 4,KRUNO
 		db 4,OCEANEEL
 		db 5,KRUNO
 	ENDC

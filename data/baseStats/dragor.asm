@@ -10,8 +10,8 @@ db DRAGON ; species type 2
 db 200 ; catch rate
 db 73 ; base exp yield
 db $77 ; sprite dimensions
-dw DRAGORPicFront
-dw DRAGORPicBack
+dw DragorPicFront
+dw DragorPicBack
 ; attacks known at lvl 0
 db TACKLE
 db 0
@@ -26,4 +26,4 @@ db %11110000
 db %10000111
 db %00111000
 db %01000011
-db BANK(DRAGORPicFront)
+db BANK(DragorPicFront)

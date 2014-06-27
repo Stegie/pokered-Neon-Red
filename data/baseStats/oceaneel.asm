@@ -10,8 +10,8 @@ db ELECTRIC ; species type 2
 db 200 ; catch rate
 db 73 ; base exp yield
 db $77 ; sprite dimensions
-dw DRAGORPicFront
-dw DRAGORPicBack
+dw OceaneelPicFront
+dw OceaneelPicBack
 ; attacks known at lvl 0
 db THUNDERSHOCK
 db BUBBLE

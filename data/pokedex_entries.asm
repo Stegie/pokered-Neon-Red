@@ -1280,28 +1280,28 @@ EnerguyDexEntry:
 	db "@"
 	
 ScizorDexEntry
-	db "STEELBUG"
+	db "STEELBUG@"
 	db 5,11
 	dw 260
 	TX_FAR _ScizorDexEntry
 	db "@"
 
 DragorDexEntry
-	db "DRAGON"
+	db "DRAGON@"
 	db 55,0
 	dw 453
 	TX_FAR _DragorDexEntry
 	db "@"
 	
 OceaneelDexEntry
-	db "ELECTRIC"
+	db "ELECTRIC@"
 	db 2,9
 	dw 76
 	TX_FAR _OceaneelDexEntry
 	db "@"
 	
 KrunoDexEntry
-	db "MAGI"
+	db "MAGI@"
 	db 3,2
 	dw 76
 	TX_FAR _KrunoDexEntry
